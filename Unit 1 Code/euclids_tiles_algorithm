@@ -1,0 +1,66 @@
+DEFINE euclids algorithm
+CREATE canvis size of 345L x 150W
+
+DECLARE length
+DECLARE width
+DECLARE box size
+
+DECLARE number of tiles on x axis
+DECLARE number of tiles on y axis
+
+DEFINE custom move function
+DEFINE custom pen size function
+
+DRAW box outline
+DRAW individual euclids tiles
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+num1 = input of Enter the first number:
+num2 = input of Enter the second number:
+
+fnum = num1  # First Number
+snum = num2  # Second Number
+
+euclids algorithm, where num3 is the answer
+drawing function import
+drawing speed fastest
+
+custom move function
+custom colour function
+
+length and width = fnum and snum
+set canvas size to length and width
+
+move to -(length / 2) and (width / 2)
+
+set custom pen colour and size
+forward length
+turn left
+forward width
+turn left
+forward length
+turn left
+forward width
+
+NoBL Number of Boxes in x axis
+NoBW = Number of Boxes in y axis
+BS = num3
+
+loop for NoBL
+
+    loop for NoBW
+        forward num3
+        left
+        forward num3
+        left
+        forward num3
+        left
+        forward num3
+        left
+        forward num3
+
+    side_length = length divided by 2
+    side_width = width divided by 2 - BS
+    BS += num3
+    custom move -side_length x, side_width y
