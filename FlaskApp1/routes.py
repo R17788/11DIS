@@ -31,6 +31,9 @@ def courses():
     return render_template("courses.html", courseData=courseData, courses=True)
 
 
-@app.route("/register")
-def register():
-    return render_template("register.html", register=True)
+@app.route("/enrolment", methods=['GET, "POST'])
+def enrolment():
+    id = request.form.get('courseID')
+    title = request.form.get('title')
+    term = request.form.get('term')
+    return render_template("enrolment.html", register=True, data={"id":id, "title": title, "term":term})

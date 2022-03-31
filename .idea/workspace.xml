@@ -2,25 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d0b7b2c2-133d-41b8-9941-9563933df4c0" name="Changes" comment="Unit 1">
-      <change afterPath="$PROJECT_DIR$/FlaskApp1/templates/courses.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/FlaskApp1/templates/courses.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/FlaskApp1/templates/includes/nav.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/FlaskApp1/templates/layout.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.flaskenv" beforeDir="false" afterPath="$PROJECT_DIR$/.flaskenv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/11DISS.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/11DISS.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FlaskApp1/templates/enrolment.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FlaskApp1/Flask App Student Files/courses.json" beforeDir="false" afterPath="$PROJECT_DIR$/FlaskApp1/courses.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FlaskApp1/Flask App Student Files/static/css/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/FlaskApp1/static/css/main.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FlaskApp1/Flask App Student Files/static/images/sps-logo-200.png" beforeDir="false" afterPath="$PROJECT_DIR$/FlaskApp1/static/images/sps-logo-200.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FlaskApp1/Flask App Student Files/static/images/sps-logo.png" beforeDir="false" afterPath="$PROJECT_DIR$/FlaskApp1/static/images/sps-logo.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FlaskApp1/Flask App Student Files/templates/includes/footer.html" beforeDir="false" afterPath="$PROJECT_DIR$/FlaskApp1/templates/includes/footer.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FlaskApp1/Flask App Student Files/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/FlaskApp1/templates/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FlaskApp1/Flask App Student Files/templates/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/FlaskApp1/templates/login.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FlaskApp1/Flask App Student Files/templates/register.html" beforeDir="false" afterPath="$PROJECT_DIR$/FlaskApp1/templates/register.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FlaskApp1/Flask App Student Files/users.json" beforeDir="false" afterPath="$PROJECT_DIR$/FlaskApp1/users.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FlaskApp1/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/FlaskApp1/__init__.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/FlaskApp1/routes.py" beforeDir="false" afterPath="$PROJECT_DIR$/FlaskApp1/routes.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FlaskApp1/templates/courses.html" beforeDir="false" afterPath="$PROJECT_DIR$/FlaskApp1/templates/courses.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FlaskApp1/templates/includes/nav.html" beforeDir="false" afterPath="$PROJECT_DIR$/FlaskApp1/templates/includes/nav.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FlaskApp1/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/FlaskApp1/templates/index.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -147,7 +134,14 @@
       <option name="project" value="LOCAL" />
       <updated>1647999702680</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Unit 1">
+      <created>1648432000180</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1648432000180</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
