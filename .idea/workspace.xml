@@ -2,10 +2,21 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d0b7b2c2-133d-41b8-9941-9563933df4c0" name="Changes" comment="Unit 1">
+      <change afterPath="$PROJECT_DIR$/FlaskApp1/models.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FlaskApp1/templates/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FlaskApp1/templates/calculator.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FlaskApp1/templates/script.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FlaskApp1/templates/user.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/FlaskApp1/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/FlaskApp1/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FlaskApp1/routes.py" beforeDir="false" afterPath="$PROJECT_DIR$/FlaskApp1/routes.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FlaskApp1/static/css/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/FlaskApp1/static/css/main.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FlaskApp1/templates/courses.py" beforeDir="false" afterPath="$PROJECT_DIR$/FlaskApp1/forms.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FlaskApp1/templates/enrolment.html" beforeDir="false" afterPath="$PROJECT_DIR$/FlaskApp1/templates/enrolment.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FlaskApp1/templates/includes/nav.html" beforeDir="false" afterPath="$PROJECT_DIR$/FlaskApp1/templates/includes/nav.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/FlaskApp1/templates/layout.html" beforeDir="false" afterPath="$PROJECT_DIR$/FlaskApp1/templates/layout.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config.py" beforeDir="false" afterPath="$PROJECT_DIR$/config.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FlaskApp1/templates/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/FlaskApp1/templates/login.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FlaskApp1/users.json" beforeDir="false" afterPath="$PROJECT_DIR$/FlaskApp1/users.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -43,18 +54,22 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/FlaskApp1/templates" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/FlaskApp1/templates/includes" />
+    <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/FlaskApp1/templates" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/FlaskApp1/templates" />
+      <recent name="$PROJECT_DIR$/FlaskApp1/templates/includes" />
       <recent name="$PROJECT_DIR$/FlaskApp1" />
     </key>
   </component>
@@ -146,7 +161,14 @@
       <option name="project" value="LOCAL" />
       <updated>1648770616362</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Unit 1">
+      <created>1648773633106</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1648773633106</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
