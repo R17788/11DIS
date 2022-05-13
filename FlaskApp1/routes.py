@@ -94,11 +94,49 @@ def calculator():
     form = CalculatorForm()
     num1 = form.num1.data
     num2 = form.num2.data
-    num1AddNum2 = str(num1+num2)
-    num1TakeNum2 = str(num1-num2)
-    num1DivNum2 = str(num1/num2)
-    num1TimesNum2 = str(num1*num2)
+    num1AddNum2 = str(num1 + num2)
+    num1TakeNum2 = str(num1 - num2)
+    num1DivNum2 = str(num1 / num2)
+    num1TimesNum2 = str(num1 * num2)
     if form.validate_on_submit():
         return render_template("calculator.html", num1AddNum2=num1AddNum2, num1TakeNum2=num1TakeNum2,
                                num1DivNum2=num1DivNum2, num1TimesNum2=num1TimesNum2, form=form, title=Calculator)
     return render_template("calculator.html", form=form, title="Calculator")
+
+
+@app.route("/calcDF", methods=['GET'])
+def calcDF():
+    """" Simply Displays the calc page accessible at '/calcDF """
+    return render_template('calcDF.html')
+
+
+@app.route("/operation_result/", methods=['POST'])
+def operation_result():
+    """ Route where we send"""
+    error = None
+    result = None
+    first_input = request.form['Input1']
+    second_input = request.form['Input2']
+    operation = request.form['operation']
+
+    try:
+        input1 = float(first_input)
+        input2 = float(second_input)
+
+        if operation == "+":
+            result = input1+input2
+
+        elif operation == "-":
+            result = input1-input2
+
+        elif operation == "/":
+            result = input1/input2
+
+        elif operation == "*":
+            result = input1*input2
+
+        elif operation == "%":
+            result = input1%input2
+
+
+

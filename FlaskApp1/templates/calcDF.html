@@ -3,10 +3,10 @@
 <h1>Python Flask Calculator</h1>
     <form method="post" action="{{url_for('operation_result')}}" id="calculator_form">
         <label for="Input1">Input 1:</label>
-        <input type="text" placeholder="Enter Num 1" name="Input1" id="Input1">
+        <input type="text" placeholder="Enter Num 1" name="Input1" id="Input1"/>
         <hr/>
         <label for="Input2">Input 2:</label>
-        <input type="text" placeholder="Enter Num 2" name="Input2" id="Input2">
+        <input type="text" placeholder="Enter Num 2" name="Input2" id="Input2"/>
         <hr/>
         <label for="operation">Operations</label>
         <select id="operation" name="operation">
@@ -17,11 +17,18 @@
             <option value="%">Modulus</option>
         </select>
         <hr/>
-        <input type="submit" value="Submit">
-        <input tupe="submit" value="Submit">
+        <input type="submit" value="Submit"/>
+        <input tupe="submit" value="Submit" style="color: red;"/>
     </form>
     {% if calculator_success == True %}
         <hr/>
         <hr/>
         <p>The calculation for {{input1}}{{operation}}{{input2}} is: {{result}}</p>
+    {% endif %}
+    {% if calculation_success == False %}
+        <br/>
+        <p>{{error}}</p>
+        <p>{{input1}} {{operation}} {{input2}} = "{{result}}"</p>
+    {% endif %}
+{% endblock %}
 

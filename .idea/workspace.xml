@@ -2,19 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d0b7b2c2-133d-41b8-9941-9563933df4c0" name="Changes" comment="Unit 1">
-      <change afterPath="$PROJECT_DIR$/FlaskApp1/templates/calcDF.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Unit 1 Code/tetris.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FlaskApp1/forms.py" beforeDir="false" afterPath="$PROJECT_DIR$/FlaskApp1/forms.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FlaskApp1/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/FlaskApp1/models.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/FlaskApp1/routes.py" beforeDir="false" afterPath="$PROJECT_DIR$/FlaskApp1/routes.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FlaskApp1/templates/calcDF.html" beforeDir="false" afterPath="$PROJECT_DIR$/FlaskApp1/templates/calcDF.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/FlaskApp1/templates/calculator.html" beforeDir="false" afterPath="$PROJECT_DIR$/FlaskApp1/templates/calculator.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FlaskApp1/templates/courses.html" beforeDir="false" afterPath="$PROJECT_DIR$/FlaskApp1/templates/courses.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FlaskApp1/templates/enrolment.html" beforeDir="false" afterPath="$PROJECT_DIR$/FlaskApp1/templates/enrolment.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/FlaskApp1/templates/includes/nav.html" beforeDir="false" afterPath="$PROJECT_DIR$/FlaskApp1/templates/includes/nav.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FlaskApp1/templates/layout.html" beforeDir="false" afterPath="$PROJECT_DIR$/FlaskApp1/templates/layout.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FlaskApp1/templates/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/FlaskApp1/templates/login.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Unit 1 Code/fibonachi_bubble.py" beforeDir="false" afterPath="$PROJECT_DIR$/Unit 1 Code/fibonachi_bubble.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -221,7 +213,14 @@
       <option name="project" value="LOCAL" />
       <updated>1652158600854</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="Unit 1">
+      <created>1652400913745</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1652400913745</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
