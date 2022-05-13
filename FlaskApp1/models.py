@@ -18,6 +18,12 @@ class Course(db.Document):
     term = db.StringField(max_length=25)
 
 
-class Enrolments(db.Document):
+class Enrolment(db.Document):
     user_id = db.IntField()
-    course_id = db.StringField(max_length=10)
+    courseID = db.StringField(max_length=10)
+
+
+class Calculator(db.Document):
+    num1 = db.IntField()
+    num2 = db.IntField()
+

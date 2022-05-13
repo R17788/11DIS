@@ -1,25 +1,52 @@
     {% extends "layout.html" %}
 
     {% block content %}
+
     <h1>Calculator</h1>
 
-    <h4>Enter First Number:</h4>
-    <form><input type="text" placeholder="Enter Number" id="num1" required></form>
+    <form name="Calculator" action="" method="post" novalidate>
+        {{form.hidden_tag()}}
 
-    <h4>Enter Second Number:</h4>
-    <form><input type="text" placeholder="Enter Number" id="num2" required></form>
+        <p>
+            {{form.num1.label}}<br>
+            {{form.num1(size=35)}}
+        </p>
 
-    <h4>Select operator:</h4>
+        <p>
+            {{form.num2.label}}<br>
+            {{form.num2(size=35)}}
+        </p>
 
-    <input class="btn-submit" type="submit" name="submit" value="Add Numbers">
-    <input class="btn-submit" type="submit" name="submit" value="Subtract Numbers">
-    <input class="btn-submit" type="submit" name="submit" value="Divide Numbers">
-    <input class="btn-submit" type="submit" name="submit" value="Multiply Numbers">
+<!--    <h4>Select operator:</h4>-->
 
-    <br><br>
-    <h4>Answer:</h4>
+<!--    <input class="btn-submit" name="Add" type="submit" value="Add Numbers"
+           {{form.submit()}}
+    <input class="btn-submit" name="Subtract" type="submit" value="Subtract Numbers"
+           {{form.submit()}}
+    <input class="btn-submit" name="Divide" type="submit" value="Divide Numbers"
+           {{form.submit()}}
+    <input class="btn-submit" name="Multiply" type="submit" value="Multiply Numbers"
+           {{form.submit()}} -->
 
+        <input class="btn-submit" name="submit" type="submit" value="Calculate" {{form.submit()}}
 
+        <h4>Answer:</h4>
+        Add:        {{num1AddNum2}} <br>
+        Subtract:   {{num1TakeNum2}} <br>
+        Divide:     {{num1DivNum2}} <br>
+        Multiply:   {{num1TimesNum2}}
 
-
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
     {% endblock %}
+

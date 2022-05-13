@@ -1,7 +1,7 @@
 from FlaskApp1 import app, db
-from flask import render_template, request, redirect, flash
-from FlaskApp1.models import User, Course, Enrolments
-from FlaskApp1.forms import LoginForm, RegisterForm
+from flask import render_template, request, redirect, flash, json, Response, url_for
+from FlaskApp1.models import User, Course, Enrolment, Calculator
+from FlaskApp1.forms import LoginForm, RegisterForm, CalculatorForm
 
 
 @app.route("/")
@@ -29,7 +29,8 @@ def login():
 
 
 @app.route("/courses")
-def courses():
+@app.route("/courses/<term>")
+def courses(term=None):
     courseData = [
         {"courseID": "1111", "title": "PHP 101", "description": "Intro to PHP", "credits": 3, "term": "Fall, Spring"},
         {"courseID": "2222", "title": "Java 1", "description": "Intro to Java Programming", "credits": 4,
@@ -39,17 +40,27 @@ def courses():
                            "term": "Fall, Spring"},
         {"courseID": "5555", "title": "Java 2", "description": "Advanced Java Programming", "credits": 4,
          "term": "Fall"}]
-    print(type(courseData))
-    print(courseData)
-    return render_template("courses.html", courseData=courseData, courses=True)
+    if term is None:
+        term = term
+    classes = Course.objects.order_by("+courseID")
+    return render_template("courses.html", courseData=courseData, courses=True, term=term)
 
 
 @app.route("/enrolment", methods=['GET', 'POST'])
 def enrolment():
-    id = request.form.get('courseID')
-    title = request.form.get('title')
-    term = request.form.get('term')
-    return render_template("enrolment.html", register=True, data={"id": id, "title": title, "term": term})
+    courseID = request.form.get('courseID')
+    courseTitle = request.form.get('title')
+    user_id = 1
+    if courseID:
+        if Enrolment.objects(user_id=user_id, courseID=courseID):
+            flash(f"OOps! You are already registered in this course {courseTitle}!")
+            return redirect(url_for("courses"))
+        else:
+            Enrolment(user_id=user_id, courseID=courseID)
+            flash(f"You are enrolled in {courseTitle}!")
+    classes = None
+    # term = request.form.get('term')
+    return render_template("enrolment.html", enrolment=True, title="Enrolment", classes=classes)
 
 
 @app.route("/register", methods=['GET', 'POST'])
@@ -62,12 +73,13 @@ def register():
         password = form.password.data
         first_name = form.first_name.data
         last_name = form.last_name.data
-        user = User(user_id=user, email=email, first_name=first_name, last_name=last_name)
+        user = User(user_id=User, email=email, first_name=first_name, last_name=last_name)
         user.set_password(password)
         user.save()
         flash("You are successfully registered!")
         return redirect(url_for('index'))
     return render_template("register.html", title="Register", form=form, register=True)
+
 
 @app.route("/user")
 def user():
@@ -77,11 +89,16 @@ def user():
     return render_template("user.html")
 
 
-@app.route("/calculator")
+@app.route("/calculator", methods=['GET', 'POST'])
 def calculator():
-    numbers = [
-        {"num1": 6},
-        {"num2": 4},
-    ]
-    print(numbers)
-    return render_template("calculator.html")
+    form = CalculatorForm()
+    num1 = form.num1.data
+    num2 = form.num2.data
+    num1AddNum2 = str(num1+num2)
+    num1TakeNum2 = str(num1-num2)
+    num1DivNum2 = str(num1/num2)
+    num1TimesNum2 = str(num1*num2)
+    if form.validate_on_submit():
+        return render_template("calculator.html", num1AddNum2=num1AddNum2, num1TakeNum2=num1TakeNum2,
+                               num1DivNum2=num1DivNum2, num1TimesNum2=num1TimesNum2, form=form, title=Calculator)
+    return render_template("calculator.html", form=form, title="Calculator")

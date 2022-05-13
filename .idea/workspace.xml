@@ -2,21 +2,19 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d0b7b2c2-133d-41b8-9941-9563933df4c0" name="Changes" comment="Unit 1">
-      <change afterPath="$PROJECT_DIR$/FlaskApp1/models.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/FlaskApp1/templates/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/FlaskApp1/templates/calculator.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/FlaskApp1/templates/script.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/FlaskApp1/templates/user.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FlaskApp1/templates/calcDF.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Unit 1 Code/tetris.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FlaskApp1/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/FlaskApp1/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FlaskApp1/forms.py" beforeDir="false" afterPath="$PROJECT_DIR$/FlaskApp1/forms.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FlaskApp1/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/FlaskApp1/models.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/FlaskApp1/routes.py" beforeDir="false" afterPath="$PROJECT_DIR$/FlaskApp1/routes.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FlaskApp1/static/css/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/FlaskApp1/static/css/main.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FlaskApp1/templates/courses.py" beforeDir="false" afterPath="$PROJECT_DIR$/FlaskApp1/forms.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FlaskApp1/templates/calculator.html" beforeDir="false" afterPath="$PROJECT_DIR$/FlaskApp1/templates/calculator.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FlaskApp1/templates/courses.html" beforeDir="false" afterPath="$PROJECT_DIR$/FlaskApp1/templates/courses.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/FlaskApp1/templates/enrolment.html" beforeDir="false" afterPath="$PROJECT_DIR$/FlaskApp1/templates/enrolment.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/FlaskApp1/templates/includes/nav.html" beforeDir="false" afterPath="$PROJECT_DIR$/FlaskApp1/templates/includes/nav.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/FlaskApp1/templates/layout.html" beforeDir="false" afterPath="$PROJECT_DIR$/FlaskApp1/templates/layout.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/FlaskApp1/templates/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/FlaskApp1/templates/login.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FlaskApp1/users.json" beforeDir="false" afterPath="$PROJECT_DIR$/FlaskApp1/users.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Unit 1 Code/fibonachi_bubble.py" beforeDir="false" afterPath="$PROJECT_DIR$/Unit 1 Code/fibonachi_bubble.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -73,7 +71,28 @@
       <recent name="$PROJECT_DIR$/FlaskApp1" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.routes">
+  <component name="RunManager" selected="Python.fibonachi_bubble">
+    <configuration name="fibonachi_bubble" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="11DISS" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Unit 1 Code" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Unit 1 Code/fibonachi_bubble.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <configuration name="main" type="PythonConfigurationType" factoryName="Python" nameIsGenerated="true">
       <module name="11DISS" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -116,6 +135,33 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="tetris" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="11DISS" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Unit 1 Code" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Unit 1 Code/tetris.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Python.fibonachi_bubble" />
+        <item itemvalue="Python.tetris" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -168,7 +214,14 @@
       <option name="project" value="LOCAL" />
       <updated>1648773633106</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Unit 1">
+      <created>1652158600854</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1652158600854</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">

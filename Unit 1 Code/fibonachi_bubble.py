@@ -13,7 +13,7 @@ t.goto(-350,0)
 t.pendown()
 
 
-while numberOfBubbles < 14:
+while numberOfBubbles < 100:
     sum = f1 + f2
     f2 = f1
 
