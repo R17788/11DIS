@@ -4,8 +4,7 @@
     <list default="true" id="d0b7b2c2-133d-41b8-9941-9563933df4c0" name="Changes" comment="Unit 1">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/FlaskApp1/routes.py" beforeDir="false" afterPath="$PROJECT_DIR$/FlaskApp1/routes.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FlaskApp1/templates/calcDF.html" beforeDir="false" afterPath="$PROJECT_DIR$/FlaskApp1/templates/calcDF.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FlaskApp1/templates/calculator.html" beforeDir="false" afterPath="$PROJECT_DIR$/FlaskApp1/templates/calculator.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FlaskApp1/templates/calcDF.html" beforeDir="false" afterPath="$PROJECT_DIR$/FlaskApp1/templates/calcdf.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/FlaskApp1/templates/includes/nav.html" beforeDir="false" afterPath="$PROJECT_DIR$/FlaskApp1/templates/includes/nav.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -220,7 +219,14 @@
       <option name="project" value="LOCAL" />
       <updated>1652400913745</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="Unit 1">
+      <created>1652402201943</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1652402201943</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
