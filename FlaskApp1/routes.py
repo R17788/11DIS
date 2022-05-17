@@ -3,7 +3,6 @@ from flask import render_template, request, redirect, flash, json, Response, url
 from FlaskApp1.models import User, Course, Enrolment, Calculator
 from FlaskApp1.forms import LoginForm, RegisterForm, CalculatorForm
 
-
 @app.route("/")
 @app.route("/index")
 @app.route("/home")
@@ -92,21 +91,28 @@ def user():
 @app.route("/calculator", methods=['GET', 'POST'])
 def calculator():
     form = CalculatorForm()
+    result = 0
     if form.validate_on_submit():
         num1 = form.num1.data
         num2 = form.num2.data
-        num1AddNum2 = str(num1 + num2)
-        num1TakeNum2 = str(num1 - num2)
-        num1DivNum2 = str(num1 / num2)
-        num1TimesNum2 = str(num1 * num2)
-        return render_template("calculator.html", num1AddNum2=num1AddNum2, num1TakeNum2=num1TakeNum2,
-                               num1DivNum2=num1DivNum2, num1TimesNum2=num1TimesNum2, form=form, title=Calculator)
+        value = request.form.get('value')
+        if id == "+":
+            result = str(num1+num2)
+        if id == "-":
+            result = str(num1 - num2)
+        if id == "/":
+            result = str(num1 / num2)
+        if id == "*":
+            result = str(num1 * num2)
+
+        return render_template("calculator.html", result=round(result, 2), form=form, title=Calculator)
     return render_template("calculator.html", form=form, title="Calculator")
 
 
 @app.route("/calcdf", methods=['GET'])
 def calcdf():
     """" Simply Displays the calc page accessible at '/calcdf """
+
     return render_template('calcdf.html')
 
 
@@ -140,12 +146,13 @@ def operation_result():
             result = input1 % input2
 
         return render_template(
-            'calcdf.html', input_df=input1, input2=input2, operation=operation, result=result, calculation_success=True)
+            'calcdf.html', input1=input1, input2=input2, operation=operation, result=result, calculation_success=True)
 
     except ZeroDivisionError:
         return render_template(
             'calcdf.html', input1=input1, input2=input2, operation=operation, result='Bad Input',
             calculation_success=False, error='You cannot divide by zero')
+
     except ValueError:
         return render_template(
             'calcdf.html', input1=input1, input2=input2, operation=operation, result='Bad Input',

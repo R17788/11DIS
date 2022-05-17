@@ -1,8 +1,9 @@
     {% extends "layout.html" %}
     {% block content %}
     <h1>Calculator</h1>
-    <form name="Calculator" action="" method="post" novalidate>
+    <form name="Calculator" action="{{url_for('calculator')}}" method="post" novalidate>
         {{form.hidden_tag()}}
+        <br>
         <p>
             {{form.num1.label}}<br>
             {{form.num1(size=35)}}
@@ -22,12 +23,23 @@
     <input class="btn-submit" name="Multiply" type="submit" value="Multiply Numbers"
           {{form.submit()}} /> -->
 
-        <input class="btn-submit" name="submit" type="submit" value="Calculate" {{form.submit()}}
+        <label for="+" for="-" for="*" for="/"></label>
+        <input class="btn-submit" type="submit" id="+" value="Add" {{form.submit()}}
+        <input class="btn-submit" type="submit" id="-" value="Subtract" {{form.submit()}}
+        <input class="btn-submit" type="submit" id="*" value="Divide" {{form.submit()}}
+        <input class="btn-submit" type="submit" id="/" value="Multiply" {{form.submit()}}
+
+
+
+<!--            <option value="+" class="btn=submit">Addition</option>-->
+<!--            <option value="-" class="btn=submit">Subtraction</option>-->
+<!--            <option value="/" class="btn=submit">Division</option>-->
+<!--            <option value="*" class="btn=submit">Multiplication</option>-->
+<!--            <option value="%" class="btn=submit">Modulus</option>-->
+        <br>
+        <br>
         <h4>Answer:</h4>
-        Add:        {{num1AddNum2}} <br>
-        Subtract:   {{num1TakeNum2}} <br>
-        Divide:     {{num1DivNum2}} <br>
-        Multiply:   {{num1TimesNum2}}
+        {{result}}
         <br>
         <br>
         <br>
