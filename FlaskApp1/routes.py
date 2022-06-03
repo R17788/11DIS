@@ -1,7 +1,8 @@
 from FlaskApp1 import app, db
 from flask import render_template, request, redirect, flash, json, Response, url_for
-from FlaskApp1.models import User, Course, Enrolment, Calculator
-from FlaskApp1.forms import LoginForm, RegisterForm, CalculatorForm
+from FlaskApp1.models import User, Course, Enrolment
+from FlaskApp1.forms import LoginForm, RegisterForm, CalculatorForm, LetterForm
+
 
 @app.route("/")
 @app.route("/index")
@@ -91,22 +92,59 @@ def user():
 @app.route("/calculator", methods=['GET', 'POST'])
 def calculator():
     form = CalculatorForm()
-    result = 0
-    if form.validate_on_submit():
-        num1 = form.num1.data
-        num2 = form.num2.data
-        value = request.form.get('value')
-        if id == "+":
-            result = str(num1+num2)
-        if id == "-":
+    num1 = form.num1.data
+    num2 = form.num2.data
+    if num1 is None:
+        return render_template("calculator.html", form=form, title="Calculator")
+    if num2 is None:
+        return render_template("calculator.html", form=form, title="Calculator")
+    else:
+        if request.form.get('add'):
+            result = str(num1 + num2)
+            operation = "+"
+            return render_template("calculator.html", result=result, form=form, title="Calculator",
+                                   operation=operation, num1=num1, num2=num2)
+        elif request.form.get('subtract'):
             result = str(num1 - num2)
-        if id == "/":
+            operation = "-"
+            return render_template("calculator.html", result=result, form=form, title="Calculator",
+                                   operation=operation, num1=num1, num2=num2)
+        elif request.form.get('divide'):
             result = str(num1 / num2)
-        if id == "*":
+            operation = "÷"
+            return render_template("calculator.html", result=result, form=form, title="Calculator",
+                                   operation=operation, num1=num1, num2=num2)
+        elif request.form.get('multiply'):
             result = str(num1 * num2)
-
-        return render_template("calculator.html", result=round(result, 2), form=form, title=Calculator)
+            operation = "*"
+            return render_template("calculator.html", result=result, form=form, title="Calculator",
+                                   operation=operation, num1=num1, num2=num2)
+        elif request.form.get('mod'):
+            result = str(num1 % num2)
+            operation = "%"
+            return render_template("calculator.html", result=result, form=form, title="Calculator",
+                                   operation=operation, num1=num1, num2=num2)
     return render_template("calculator.html", form=form, title="Calculator")
+
+
+@app.route("/letter_counter", methods=['GET', 'POST'])
+def letter_counter():
+    form = LetterForm()
+    if form.validate_on_submit():
+        word = form.word.data.lower()
+        my_dict = {}  # Create a dictionary object
+        for letter in word:
+            my_dict[letter] = my_dict.get(letter, 0) + 1
+
+        for key, val in my_dict.items():
+            print(f'Letter: {key.upper()}, Count: {val}')
+        print(f'There are {len(word)} total letters in the word {word}')
+        print(f'There are {len(my_dict)} unique letters in the word {word}')
+
+        return render_template("letter_counter.html", form=form, word=word, my_dict=my_dict, len_word=len(word),
+                               len_mydict=len(my_dict), key=key, val=val)
+
+    return render_template("letter_counter.html", form=form)
 
 
 @app.route("/calcdf", methods=['GET'])

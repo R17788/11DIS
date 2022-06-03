@@ -20,6 +20,14 @@ class RegisterForm(FlaskForm):
 
 
 class CalculatorForm(FlaskForm):
-    num1 = IntegerField("First Number", validators=[DataRequired()])
-    num2 = IntegerField("Second Number", validators=[DataRequired()])
-    submit = SubmitField("Calculate")
+    num1 = IntegerField("First Number:", validators=[DataRequired()])
+    num2 = IntegerField("Second Number:", validators=[DataRequired()])
+    add = SubmitField("add")
+    subtract = SubmitField("subtract")
+    divide = SubmitField("divide")
+    multiply = SubmitField("multiply")
+
+
+class LetterForm(FlaskForm):
+    word = StringField("Word", validators=[DataRequired()])
+    submit = SubmitField("Submit")

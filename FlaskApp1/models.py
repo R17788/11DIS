@@ -22,8 +22,3 @@ class Enrolment(db.Document):
     user_id = db.IntField()
     courseID = db.StringField(max_length=10)
 
-
-class Calculator(db.Document):
-    num1 = db.IntField()
-    num2 = db.IntField()
-

@@ -2,12 +2,18 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d0b7b2c2-133d-41b8-9941-9563933df4c0" name="Changes" comment="Unit 1">
-      <change afterPath="$PROJECT_DIR$/FlaskApp1/Standalone_python/dictionary_letter_count.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Unit 1 Code/star_pryamid.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FlaskApp1/templates/letter_counter.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/PSMT Unit1/isomorphic_pairs.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/PSMT Unit1/roman_numerals.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FlaskApp1/Standalone_python/dictionary_letter_count.py" beforeDir="false" afterPath="$PROJECT_DIR$/FlaskApp1/Standalone_python/dictionary_letter_count.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FlaskApp1/forms.py" beforeDir="false" afterPath="$PROJECT_DIR$/FlaskApp1/forms.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FlaskApp1/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/FlaskApp1/models.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/FlaskApp1/routes.py" beforeDir="false" afterPath="$PROJECT_DIR$/FlaskApp1/routes.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FlaskApp1/templates/calcdf.html" beforeDir="false" afterPath="$PROJECT_DIR$/FlaskApp1/templates/calcdf.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FlaskApp1/static/css/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/FlaskApp1/static/css/main.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/FlaskApp1/templates/calculator.html" beforeDir="false" afterPath="$PROJECT_DIR$/FlaskApp1/templates/calculator.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FlaskApp1/templates/courses.html" beforeDir="false" afterPath="$PROJECT_DIR$/FlaskApp1/templates/courses.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FlaskApp1/templates/includes/nav.html" beforeDir="false" afterPath="$PROJECT_DIR$/FlaskApp1/templates/includes/nav.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -51,7 +57,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/FlaskApp1/templates" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
   </component>
   <component name="RecentsManager">
@@ -59,12 +65,13 @@
       <recent name="$PROJECT_DIR$/FlaskApp1/templates" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/PSMT Unit1" />
       <recent name="$PROJECT_DIR$/FlaskApp1/templates" />
       <recent name="$PROJECT_DIR$/FlaskApp1/templates/includes" />
       <recent name="$PROJECT_DIR$/FlaskApp1" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.dictionary_letter_count">
+  <component name="RunManager" selected="Python.isomorphic_pairs">
     <configuration name="dictionary_letter_count" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="11DISS" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -107,6 +114,27 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="isomorphic_pairs" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="11DISS" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/PSMT Unit1" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/PSMT Unit1/isomorphic_pairs.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <configuration name="main" type="PythonConfigurationType" factoryName="Python" nameIsGenerated="true">
       <module name="11DISS" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -120,6 +148,27 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/main.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="roman_numerals" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="11DISS" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/PSMT Unit1" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/PSMT Unit1/roman_numerals.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -170,33 +219,13 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="tetris" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="11DISS" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Unit 1 Code" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Unit 1 Code/tetris.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.isomorphic_pairs" />
+        <item itemvalue="Python.roman_numerals" />
         <item itemvalue="Python.dictionary_letter_count" />
         <item itemvalue="Python.star_pryamid" />
         <item itemvalue="Python.fibonachi_bubble" />
-        <item itemvalue="Python.tetris" />
       </list>
     </recent_temporary>
   </component>
@@ -286,7 +315,14 @@
       <option name="project" value="LOCAL" />
       <updated>1652659924098</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="Unit 1">
+      <created>1652754066937</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1652754066937</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">

@@ -26,10 +26,10 @@ li {
 
 a {
     text-decoration: none;
-    color: blue;
+    color: red;
 }
 
-a:hover { color : red;}
+a:hover { color : blue;}
 
 hr {
     width: 100%;
@@ -85,7 +85,7 @@ footer {
 }
 
 .btn-submit {
-    background-color: cornflowerblue;
+    background-color: #3E786E;
     color: white;
     padding: 16px 20px;
     margin: 8px 0;
@@ -101,4 +101,9 @@ footer {
 .error-message{
     color: red;
 
+}
+
+.btn-calc{
+    width: 215px;
+    height: 100px;
 }

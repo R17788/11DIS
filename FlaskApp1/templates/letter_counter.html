@@ -1,0 +1,29 @@
+    {% extends "layout.html" %}
+    {% block content %}
+
+    <h1>Calculator</h1>
+    <form name="letter_counter" action="{{url_for('letter_counter')}}" method="post" novalidate>
+        {{form.hidden_tag()}}
+        <br>
+        <p>
+            {{form.word.label}}<br>
+            {{form.word(size=35)}}
+        </p>
+
+        <input class="btn-submit" type="submit" value="Submit" {{form.submit()}}
+
+    </form>
+
+    <h4>Letter:</h4>
+
+    {{my_dict}}<br>
+    There are {{len_word}} total letters in the word: {{word}} <br>
+    There are {{len_mydict}} unique letters in the word: {{word}}
+    <br>
+    {% for key, val in my_dict.items(): %}
+        {{key.upper()}}: {{val}}<br>
+
+
+    {% endfor %}
+    {% endblock %}
+
