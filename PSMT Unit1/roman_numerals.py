@@ -20,13 +20,19 @@ values = [1000, 900, 500, 400, 100, 90, 50, 40, 10, 9, 5, 4, 1]
 roman = ["M", "C M", "D", "C D", "C", "X C", "L", "X L", "X", "I X", "V", "I V", "I"]
 repeat = True
 while repeat:
-    number = int(input("Enter a number between 1 and 3999: "))
-    if 1 <= number <= 3999:
+    number = input("Enter a number between 1 and 3999: ")
+    if not number.isdigit():
+        print("Please Enter a Number")
+        repeat = True
+
+    elif 1 <= int(number) <= 3999:
+        num = int(number)
         for i in range(13):
-            while number >= values[i]:
-                number = number - values[i]
+            while num >= values[i]:
+                num = num - values[i]
                 print(roman[i], end=" ")
         repeat = False
+
     else:
         print("Number too big, please enter number between 1 and 3999. ")
         repeat = True
