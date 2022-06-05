@@ -195,3 +195,13 @@ def operation_result():
         return render_template(
             'calcdf.html', input1=input1, input2=input2, operation=operation, result='Bad Input',
             calculation_success=False, error='Cannot perform numeric operations with provided Input')
+
+
+@app.route("/r_p_s.html", methods=['GET', 'POST'])
+def r_p_s():
+    return render_template("r_p_s.html")
+
+
+
+
+
