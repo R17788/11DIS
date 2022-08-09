@@ -31,3 +31,11 @@ class CalculatorForm(FlaskForm):
 class LetterForm(FlaskForm):
     word = StringField("Word", validators=[DataRequired()])
     submit = SubmitField("Submit")
+
+
+class RPSForm(FlaskForm):
+    paper = SubmitField("paper")
+    scissors = SubmitField("siccors")
+    rock = SubmitField("rock")
+    lizard = SubmitField("lizard")
+    spock = SubmitField("spock")

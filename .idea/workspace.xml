@@ -2,11 +2,21 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d0b7b2c2-133d-41b8-9941-9563933df4c0" name="Changes" comment="Unit 1">
-      <change afterPath="$PROJECT_DIR$/FlaskApp1/static/images/p-s-r-l-s.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/FlaskApp1/templates/r_p_s.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog_post/app.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog_post/init_db.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog_post/schemas/schema.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog_post/templates/base.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog_post/templates/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/python_challenges.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FlaskApp1/forms.py" beforeDir="false" afterPath="$PROJECT_DIR$/FlaskApp1/forms.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/FlaskApp1/routes.py" beforeDir="false" afterPath="$PROJECT_DIR$/FlaskApp1/routes.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FlaskApp1/static/css/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/FlaskApp1/static/css/main.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/FlaskApp1/templates/includes/nav.html" beforeDir="false" afterPath="$PROJECT_DIR$/FlaskApp1/templates/includes/nav.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FlaskApp1/templates/r_p_s.html" beforeDir="false" afterPath="$PROJECT_DIR$/FlaskApp1/templates/r_p_s.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PSMT Unit1/isomorphic_pairs.py" beforeDir="false" afterPath="$PROJECT_DIR$/PSMT Unit1/isomorphic_pairs.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PSMT Unit1/rock_paper_siccors.py" beforeDir="false" afterPath="$PROJECT_DIR$/PSMT Unit1/rock_paper_siccors.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -16,8 +26,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="HTML File" />
         <option value="Python Script" />
+        <option value="HTML File" />
       </list>
     </option>
   </component>
@@ -65,8 +75,8 @@
       <recent name="$PROJECT_DIR$/FlaskApp1" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.rock_paper_siccors">
-    <configuration name="dictionary_letter_count" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="Python.app">
+    <configuration name="app" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="11DISS" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -74,11 +84,11 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/FlaskApp1/Standalone_python" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/blog_post" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/FlaskApp1/Standalone_python/dictionary_letter_count.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/blog_post/app.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -121,6 +131,27 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/main.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="python_challenges" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="11DISS" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/python_challenges.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -192,34 +223,13 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="star_pryamid" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="11DISS" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Unit 1 Code" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Unit 1 Code/star_pryamid.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.rock_paper_siccors" />
+        <item itemvalue="Python.app" />
+        <item itemvalue="Python.python_challenges" />
         <item itemvalue="Python.isomorphic_pairs" />
+        <item itemvalue="Python.rock_paper_siccors" />
         <item itemvalue="Python.roman_numerals" />
-        <item itemvalue="Python.dictionary_letter_count" />
-        <item itemvalue="Python.star_pryamid" />
       </list>
     </recent_temporary>
   </component>
@@ -330,7 +340,14 @@
       <option name="project" value="LOCAL" />
       <updated>1654411634331</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="Unit 1">
+      <created>1654412638968</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1654412638968</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">

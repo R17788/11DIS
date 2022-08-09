@@ -13,8 +13,13 @@ body {
     height: 100%;
     position: relative;
     margin:0px;
-}
 
+}
+d{
+    position: absolute;
+    top: 20%;
+    left: 60%;
+}
 header {
     text-align: center;
 }
@@ -26,7 +31,7 @@ li {
 
 a {
     text-decoration: none;
-    color: red;
+    color: #266fff;
 }
 
 a:hover { color : blue;}
@@ -106,4 +111,56 @@ footer {
 .btn-calc{
     width: 215px;
     height: 100px;
+}
+
+.btn-rps:hover{
+    width: 215px;
+    height: 100px;
+    background-color: #6495ED;
+    color: white;
+    border: none;
+
+}
+
+.btn-rps{
+    width: 215px;
+    height: 100px;
+    border: 2px #004240 dashed;
+    background-color: white;
+}
+
+.p-s-r-l-s_logo{
+    width: 260px;
+}
+
+.moves{
+    width: 160px;
+    position: inline;
+    padding: 30px
+}
+
+.rules{
+    color: #004240;
+}
+
+.calcgreen{
+    color: #004240;
+}
+
+.winner{
+    color: #269dc9;
+}
+
+.nav_1{
+    margin-left: -20px;
+}
+
+nav{
+    margin-bottom: -10px;
+}
+
+background{
+    height: 100px;
+    background-color: black;
+    background-position: center;
 }

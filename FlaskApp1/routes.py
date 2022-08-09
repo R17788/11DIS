@@ -1,8 +1,8 @@
 from FlaskApp1 import app, db
 from flask import render_template, request, redirect, flash, json, Response, url_for
 from FlaskApp1.models import User, Course, Enrolment
-from FlaskApp1.forms import LoginForm, RegisterForm, CalculatorForm, LetterForm
-
+from FlaskApp1.forms import LoginForm, RegisterForm, CalculatorForm, LetterForm, RPSForm
+import random
 
 @app.route("/")
 @app.route("/index")
@@ -147,6 +147,74 @@ def letter_counter():
     return render_template("letter_counter.html", form=form)
 
 
+@app.route("/r_p_s.html", methods=['GET', 'POST'])
+def r_p_s():
+    form = RPSForm
+    player_1 = "You"
+    player_2 = "Computer"
+    a = 1
+    b = random.randint(0, 5)
+    tie = None
+    winner = None
+    choice = None
+    choice2 = None
+
+    if request.form.get("paper"):
+        a = 1
+        # print(f"{player_1} chose Paper!")
+        choice = "Paper"
+    elif request.form.get("scissors"):
+        a = 2
+        # print(f"{player_1} chose Siccors!")
+        choice = "Scissors"
+    elif request.form.get("rock"):
+        a = 3
+        # print(f"{player_1} chose Rock!")
+        choice = "Rock"
+    elif request.form.get("lizard"):
+        a = 4
+        # print(f"{player_1} chose Lizard!")
+        choice = "Lizard"
+    elif request.form.get("spock"):
+        a = 5
+        # print(f"{player_1} chose Spock!")
+        choice = "Spock"
+
+    if b == 1:
+        # print(f"{player_2} chose Paper!")
+        choice2 = "Paper"
+    elif b == 2:
+        # print(f"{player_2} chose Siccors!")
+        choice2 = "Scissors"
+    elif b == 3:
+        # print(f"{player_2} chose Rock!")
+        choice2 = "Rock"
+    elif b == 4:
+        # print(f"{player_2} chose Lizard!")
+        choice2 = "Lizard"
+    else:
+        # print(f"{player_2} chose Spock!")
+        choice2 = "Spock"
+
+    d = (5 + a - b) % 5
+
+    if d == 1 or d == 3:
+        winner = player_1
+        # print(f"{winner} Wins!")
+
+    if d == 2 or d == 4:
+        winner = player_2
+        # print(f"{winner} Wins!")
+
+    if d == 0:
+        # print("Its a Tie!")
+        tie = True
+    return render_template("r_p_s.html", title="", choice=choice, choice2=choice2, winner=winner, tie=tie, form=form)
+
+
+
+
+
 @app.route("/calcdf", methods=['GET'])
 def calcdf():
     """" Simply Displays the calc page accessible at '/calcdf """
@@ -195,13 +263,3 @@ def operation_result():
         return render_template(
             'calcdf.html', input1=input1, input2=input2, operation=operation, result='Bad Input',
             calculation_success=False, error='Cannot perform numeric operations with provided Input')
-
-
-@app.route("/r_p_s.html", methods=['GET', 'POST'])
-def r_p_s():
-    return render_template("r_p_s.html")
-
-
-
-
-

@@ -1,25 +1,71 @@
     {% extends "layout.html" %}
     {% block content %}
-    <h1>Paper, Siccors, Rock, Lizard, Spock!</h1>
-    <form name="Rock_Paper_Siccors" action="{{url_for('r_p_s')}}" method="post" novalidate>
+    <background>
+    <h1 xmlns:color="http://www.w3.org/1999/xhtml">Paper, Scissors, Rock, Lizard, Spock!</h1>
+    <body class="background">
+    <form name="Rock_Paper_Scissors" action="{{url_for('r_p_s')}}" method="post" novalidate>
         <br>
-        <img src="p-s-r-l-s.png" alt="paper, siccors, rock, lizard, spock graph">
-        <p>
+        <h5>Below is the graph showing the different moves of this game:</h5>
+        <a href="https://bigbangtheory.fandom.com/wiki/Rock,_Paper,_Scissors,_Lizard,_Spock" target="_blank" rel="noreferrer noopener"><img class="p-s-r-l-s_logo" src="static/images/p-s-r-l-s.png"
+                alt="paper, Scissors, rock, lizard, spock graph"></a>
+        <h4>Here are the rules:</h4>
+        <h5>
+            <ul>
+                <li class="rule1 rules">1) Scissors beats Paper and Lizard </li><br>
+                <li class="rule2 rules">2) Paper beats Rock and Spock</li><br>
+                <li class="rule3 rules">3) Rock beats Scissors and Lizard</li><br>
+                <li class="rule4 rules">4) Lizard beats Spock and Paper </li><br>
+                <li class="rule5 rules">5) Spock beats Scissors and Rock</li>
+            </ul>
 
+        <br>
+
+        <d>
+            <p>
+            <h4>Pick Your Move:</h4>
+                <img class = "moves" src="static/images/p-s-r-l-s/scissors.png">
+                <input type="submit" value="Scissors" class="btn-rps" name="scissors" alt="scissors hand gesture">
+            </label>
         </p>
         <p>
-
+                <img class = "moves" src="static/images/p-s-r-l-s/paper.png">
+                <input type="submit" value="Paper" class="btn-rps" name="paper" alt="paper hand gesture">
+            </label>
         </p>
+        <p>
+                <img class = "moves" src="static/images/p-s-r-l-s/rock.png">
+                <input type="submit" value="Rock" class="btn-rps" name="rock" alt="rock hand gesture">
+            </label>
+        </p>
+        <p>
+                <img class = "moves" src="static/images/p-s-r-l-s/lizard.png">
+                <input type="submit" value="Lizard "class="btn-rps" name="lizard" alt="lizard hand gesture">
+            </label>
+        </p>
+        <p>
+                <img class = "moves" src="static/images/p-s-r-l-s/spock.png">
+                <input type="submit" value="Spock" class="btn-rps" name="spock" alt="spock hand gesture">
+            </label>
+        </p>
+        </d>
+        <h4>The second go will be selected at random, by the computer! </h4>
+        </h5>
+    </form>
 
+        <h4>Your Choice: {{choice}}</h4>
+        <h4>Computer Choice: {{choice2}}</h4>
+    <br>
+        <h2 class="winner">WINNER:</h2>
 
-
-
-
-
+        <h3> The winner is </h3><br><h3 class="calcgreen">{{winner}}!!</h3>
 
         <br>
         <br>
-        <h4>Result:</h4>
+        <br>
+        <br>
+        <br><br><br>
+    </background>
+    </body>
 
 
 
